@@ -1,0 +1,21 @@
+<h3>List of Tasks</h3>
+<hr />
+<div class="container">
+  <ul class="list-group">
+    <li
+      class="list-group-item m-1 border border-secondary"
+      *ngFor="let task of tasks"
+    >
+      <p class="h5">{{ task.task }}</p>
+      <hr />
+      <div class="row" style="font-size: 12px;">
+        <div class="col">
+          <b>Started At:</b> {{ task.startedAt | date: "medium" }}
+        </div>
+        <div class="col">
+          <b>Ended At:</b> {{ task.endedAt | date: "medium" }}
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

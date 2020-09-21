@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand">Timer App</a>
+  <button class="navbar-toggler d-lg-none" type="button" (click)="show = !show">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [class.collapse]="!show">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="list" [routerLink]="['/timer']">Home</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/list']">tasks</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-n1"></ul>
+  </div>
+</nav>
